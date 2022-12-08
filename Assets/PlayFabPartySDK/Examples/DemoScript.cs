@@ -45,7 +45,10 @@ public class DemoScript : MonoBehaviour {
 		// This player will not be able to send text or voice communication.
 		// Data messages can still be sent.
 		player.IsMuted = false;
-		Debug.Log("new player");
+		player.VoiceLevel = 1;
+		Debug.Log("new player");		
+		Debug.Log(player.ChatState);
+
 	}
 	private void OnRemotePlayerLeft(object sender, PlayFabPlayer player) {
 		// This player will not be able to send text or voice communication.
